@@ -61,14 +61,14 @@ export const profileConfig: ProfileConfig = {
 			url: "https://x.com/PeytonWang259",
 		},
 		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/karma-fire",
-		},
-		{
 			name: "Steam",
 			icon: "fa6-brands:steam",
 			url: "https://steamcommunity.com/profiles/76561199212501112/",
+		},
+		{
+			name: "GitHub",
+			icon: "fa6-brands:github",
+			url: "https://github.com/karma-fire",
 		},
 	],
 };
