@@ -1,9 +1,14 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于我
 
-::github{repo="saicaca/fuwari"}
+我是 Karma Fire。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+这里是我的个人博客，主要记录生活中的片段、个人随笔、一些思考和感悟，也会分享技术学习与项目实践。
+
+我希望把那些当下觉得值得记录的内容留下来。它们不一定完整，也不一定总是严肃，但都属于我正在经历和思考的一部分。
+
+## 关于这个博客
+
+这个博客使用 Astro 和 Fuwari 构建，源码可以在
+[GitHub](https://github.com/karma-fire/karma-fire.github.io) 查看。
+
+我会在这里记录生活、阅读、技术，以及那些偶尔浮现出来的想法。
