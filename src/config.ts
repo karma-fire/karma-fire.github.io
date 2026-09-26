@@ -1,5 +1,6 @@
 import type {
 	ExpressiveCodeConfig,
+	FriendsConfig,
 	LicenseConfig,
 	NavBarConfig,
 	ProfileConfig,
@@ -43,9 +44,29 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
+			name: "友链",
+			url: "/friends/",
+		},
+		{
 			name: "GitHub",
 			url: "https://github.com/karma-fire/karma-fire.github.io", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
+		},
+	],
+};
+
+export const friendsConfig: FriendsConfig = {
+	enable: true,
+	links: [
+		{
+			name: "萝北",
+			url: "https://tobenot.top",
+			description: "作家之屋",
+		},
+		{
+			name: "朋友 B",
+			url: "https://b.example.com/",
+			description: "一个个人博客。",
 		},
 	],
 };

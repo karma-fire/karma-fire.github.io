@@ -1,0 +1,42 @@
+---
+import { Icon } from "astro-icon/components";
+import { friendsConfig } from "../config";
+
+const links = friendsConfig.links;
+---
+
+{friendsConfig.enable && <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    {links.length > 0 ? links.map((friend) => (
+        <a
+            href={friend.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group card-base flex min-h-28 items-center gap-4 p-4 transition hover:-translate-y-0.5 hover:shadow-md"
+        >
+            {friend.avatar ? (
+                <img
+                    src={friend.avatar}
+                    alt={`${friend.name} avatar`}
+                    loading="lazy"
+                    class="h-14 w-14 shrink-0 rounded-xl object-cover"
+                />
+            ) : (
+                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[var(--btn-regular-bg)] text-[var(--primary)]">
+                    <Icon name="material-symbols:person-outline-rounded" class="text-3xl" />
+                </div>
+            )}
+            <div class="min-w-0 flex-1">
+                <div class="flex items-center gap-1 font-bold text-[var(--deep-text)] transition group-hover:text-[var(--primary)]">
+                    <span class="truncate">{friend.name}</span>
+                    <Icon name="fa6-solid:arrow-up-right-from-square" class="shrink-0 text-xs text-black/25 dark:text-white/25" />
+                </div>
+                {friend.description && <p class="mt-1 line-clamp-2 text-sm text-black/50 dark:text-white/50">{friend.description}</p>}
+            </div>
+        </a>
+    )) : (
+        <div class="card-base col-span-full px-6 py-10 text-center text-black/50 dark:text-white/50">
+            <Icon name="material-symbols:link-rounded" class="mb-2 text-3xl text-[var(--primary)]" />
+            <p>友链正在整理中。</p>
+        </div>
+    )}
+</div>}
